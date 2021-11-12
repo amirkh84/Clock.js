@@ -1,0 +1,136 @@
+body{
+ 
+    background: var(--bg-color);
+    background: linear-gradient(141deg, rgb(234, 244, 255) 0%, rgba(224,224,224,1) 100%);
+}
+
+:root{
+    --bg-color:rgb(233,243,255);
+}
+
+html{
+    height: 100%;
+}
+*{
+   padding: 0;
+   margin: 0;
+   
+}
+.container{
+    margin: 20px;
+}
+.tool-bar{
+    text-align: right;
+}
+.tool-bar img{
+    width: 20px;
+    padding: 10px;
+    background: var(--bg-color);
+    background: linear-gradient(141deg, --bg-color 0%, rgba(224,224,224,1) 100%);
+
+    box-shadow:  2px 2px 5px #bbbbbb,
+    -2px -2px 5px #ffffff;;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.check-botton{
+    box-shadow: inset 2px 2px 5px #bbbbbb,
+    -2px -2px 5px #ffffff !important;;
+}
+.clock-body{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.clock{
+    display: flex;
+    justify-content:center ;
+    place-items: center;
+    position: relative;
+    text-align: center;
+    width: 250px;
+    height: 250px;
+    background:var(--bg-color);
+    background: linear-gradient(141deg, --bg-color 0%, rgba(224,224,224,1) 100%);
+
+    box-shadow:  10px 10px 20px #bbbbbb,
+    -10px -10px 20px #ffffff;;
+
+    border-radius: 50%;
+}
+.lop{
+    position: absolute;
+    width: 20px;
+    height: 5px;
+    background-color: black;
+}
+.right{
+    right:0 ;
+    top: 50%;
+}
+.left{
+    left:0 ;
+    top: 50%;
+}
+.up{
+    right: 115px;
+    transform: rotate(90deg);
+    top: 9px;
+}
+.down{
+    right:115px ;
+    transform: rotate(90deg);
+    bottom: 8px;
+}
+.sm-clock{
+    width: 100px;
+    height: 100px;
+}
+p{
+    position: absolute;
+    bottom: 25px;
+}
+
+.h-line{
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    width: 50px;
+    height: 5px;
+    background-color: black;
+    transform-origin: bottom right;
+    transform: rotate(90deg);
+    transition: all 200ms ease;
+    z-index: 1;
+}
+.m-line{
+    position: absolute;
+    top: 45px;
+    right: 50px;
+    width: 80px;
+    height: 5px;
+    background-color: black;
+    transform-origin: bottom right;
+    transition: all 200ms ease;
+    transform: rotate(90deg);
+    z-index: 1;
+}
+.s-line{
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    width: 120px;
+    height: 2px;
+    background-color: rgb(255, 37, 37);
+    transform-origin: bottom right;
+    transition: all 200ms ease;
+    transform: rotate(90deg);
+    z-index: 0;
+}
+
+.dig-clock h2{
+    text-align: center;
+    font-weight: 100;
+    font-size: 30px;
+    margin-top: 25px;
+}
