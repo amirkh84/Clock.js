@@ -100,7 +100,7 @@ p{
     background-color: black;
     transform-origin: bottom right;
     transform: rotate(90deg);
-    transition: all 200ms ease;
+   
     z-index: 1;
 }
 .m-line{
@@ -111,7 +111,7 @@ p{
     height: 5px;
     background-color: black;
     transform-origin: bottom right;
-    transition: all 200ms ease;
+   
     transform: rotate(90deg);
     z-index: 1;
 }
@@ -123,7 +123,7 @@ p{
     height: 2px;
     background-color: rgb(255, 37, 37);
     transform-origin: bottom right;
-    transition: all 200ms ease;
+    
     transform: rotate(90deg);
     z-index: 0;
 }
