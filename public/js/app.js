@@ -1,12 +1,22 @@
 const DigitsText = document.querySelector("h2");
-const DarkBot = document.querySelector("img");
+const DayNight = document.querySelector("i");
 const Sline = document.getElementById('Sline');
 const Mline = document.getElementById('Mline');
 const Hline = document.getElementById('Hline');
 
-DarkBot.addEventListener(("click"),function(){
-    this.classList.toggle("check-botton");
-});
+const date = new Date;
+const Hdate =  date.getHours();
+if(Hdate >=6 && Hdate<= 18){
+
+    DayNight.classList.remove("fa-moon");
+    DayNight.classList.add("fa-sun");
+}
+else{
+    DayNight.classList.remove("fa-sun");
+    DayNight.classList.add("fa-moon");
+}
+
+
 
 function GenerateClock(){
     const date = new Date;
