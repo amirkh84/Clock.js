@@ -1,5 +1,4 @@
 body{
- 
     background: var(--bg-color);
     background: linear-gradient(141deg, rgb(234, 244, 255) 0%, rgba(224,224,224,1) 100%);
 }
@@ -22,12 +21,12 @@ html{
 .tool-bar{
     text-align: right;
 }
-.tool-bar img{
-    width: 20px;
-    padding: 10px;
+.tool-bar i{
+    font-size: 20px;
+    text-align: center;
+    padding: 15px;
     background: var(--bg-color);
     background: linear-gradient(141deg, --bg-color 0%, rgba(224,224,224,1) 100%);
-
     box-shadow:  2px 2px 5px #bbbbbb,
     -2px -2px 5px #ffffff;;
     border-radius: 50%;
@@ -40,7 +39,7 @@ html{
 .clock-body{
     display: flex;
     justify-content: center;
-    margin-top: 100px;
+    
 }
 .clock{
     display: flex;
@@ -86,6 +85,15 @@ html{
     width: 100px;
     height: 100px;
 }
+.sm-clock::after{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ff3838;
+    z-index: 10;
+}
 p{
     position: absolute;
     bottom: 25px;
@@ -94,7 +102,7 @@ p{
 .h-line{
     position: absolute;
     top: 50px;
-    right: 50px;
+    right: 52px;
     width: 50px;
     height: 5px;
     background-color: black;
@@ -106,7 +114,7 @@ p{
 .m-line{
     position: absolute;
     top: 45px;
-    right: 50px;
+    right: 52px;
     width: 80px;
     height: 5px;
     background-color: black;
@@ -118,7 +126,7 @@ p{
 .s-line{
     position: absolute;
     top: 50px;
-    right: 50px;
+    right: 52px;
     width: 120px;
     height: 2px;
     background-color: rgb(255, 37, 37);
