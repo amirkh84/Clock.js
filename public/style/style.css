@@ -39,7 +39,7 @@ html{
 .clock-body{
     display: flex;
     justify-content: center;
-    
+    margin-top: 100px;
 }
 .clock{
     display: flex;
@@ -141,4 +141,13 @@ p{
     font-weight: 100;
     font-size: 30px;
     margin-top: 25px;
+}
+.otehr-info{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+.otehr-info h4{
+    font-weight: 200;
+    font-size: 20px;
 }
